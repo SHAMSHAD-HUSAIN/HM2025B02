@@ -1,0 +1,27 @@
+body{
+    background-color: cadetblue;
+}
+.heading-one{
+    background-color: burlywood;
+}
+.inline{
+    background-color: beige;
+    display: inline-block;
+    height: 200px;
+}
+.inline-2{
+    background-color: blue;
+    height: 300px;
+    width: 400px;
+}
+.inline-ele{
+ display: inline-block;
+ background-color: red;
+ height: 500px;
+ width: 500px;
+}
+.div-one{
+    background-color: chocolate;
+    height: 300px;
+    display: none;
+}

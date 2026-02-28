@@ -130,3 +130,252 @@ font-size: 30;
   font-size: 17px;
   /* display: inline; */
 }
+.display-container{
+  /* background-color: aqua; */
+  border: 2px solid black;
+  /* height: 400px; */
+}
+.display-container div{
+  padding: 20px;
+  background-color: chartreuse;
+  height: 100px;
+  width: 100px;
+
+}
+ #div-one{
+  
+  background-color: rgb(210, 178, 20);
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+ #div-two{
+  
+  background-color: rgb(123, 0, 255);
+  position: sticky;
+  top: 500px;
+  left: 300px;
+}
+ #div-three{
+  
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  top:20px ;
+  left: 50px;
+}
+.display-container span{
+  background-color: rgb(255, 0, 242);
+}
+ #div-four{
+  
+  background-color: rgb(7, 1, 21);
+  /* position: fixed; */
+  /* z-index: 1; */
+  /* right: 200px;top: 300px; */
+  
+}
+.head-child{
+  display: none;
+}
+
+
+/* .float-img{
+  float: right;
+
+} */
+
+.text-div{
+  border: 1px solid black;
+  text-align: center;
+  height: 700px;
+  /* align-items: center; */
+  /* vertical-align: text-bottom; */
+  
+}
+.flex-container{
+  margin: 10px;
+  border: 2px solid red;
+  /* height: 600px; */
+    display: flex;
+  /* justify-content:space-between; */
+  align-items:center;
+  background-color: black;
+  position: fixed;
+  top: -4px;
+}
+.flex-container div{
+  height:80px;
+  width: 200px;
+  /* border: 2px solid rgb(7, 1, 21); */
+  text-align: center;
+  /* padding: 10px; */
+  font-size: 40px;
+  font-weight: 900;
+  /* margin: 10px; */
+
+}
+#flex-child-img{
+  height: 70px;
+  width: 70px;
+  /* margin-bottom:30px ; */
+  border-radius: 50%;
+}
+#flex-child-one{
+  background-color: rgb(0, 213, 255);
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+ 
+}
+#flex-child-two{
+  background-color: blueviolet;
+}
+#flex-child-three{
+  background-color: chocolate;
+}
+#flex-child-four{
+  background-color: darkgreen;
+}
+
+.parent-div{
+  background-color: darkgray;
+  height: 600px;
+  /* width: 500px; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-direction: column-re; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start; */
+}
+.parent-div div{
+  height: 150px;
+  width: 200px;
+  border: 1px solid black;
+  /* text-align: center; */
+  /* display: inline-block; */
+
+}
+.parent-div div img{
+  height: 150px;
+  width: 200px;
+  /* z-index: -1; */
+}
+/* .parent-div div button{
+
+  z-index: 1;
+} */
+#child-display-one{
+  background-color: bisque;
+  /* position: relative; */
+  /* top: 50px; */
+  /* left: 500px; */
+  flex-grow: 2;
+}
+#child-display-two{
+  background-color: rgb(196, 255, 201);
+  /* display: inline-block; */
+  /* position: absolute; */
+  /* top: 40px; */
+  /* left: 700px; */
+  flex-shrink: 3;
+}
+#child-display-three{
+  background-color: rgb(101, 20, 230);
+  /* position: fixed; */
+  /* top: 40px; */
+}
+#child-display-four{
+  background-color: chartreuse;
+  align-self: flex-end;
+  flex-basis: auto;
+}
+#child-display-five{
+  background-color: rgb(27, 28, 26);
+}
+#child-display-six{
+  background-color: rgb(190, 196, 209);
+}
+#child-display-seven{
+  background-color: rgb(224, 57, 19);
+  
+}
+#child-display-eight{
+  background-color: rgb(200, 26, 216);
+}
+.new-parent{
+  background-color: blue;
+  height: 500px;
+}
+.new-child{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: bisque;
+  /* position: fixed; */
+  /* top: 300px; */
+  /* left: 400px; */
+}
+.heading-main-grid{
+  position: relative;
+  top: 150px;
+  left: 600px;
+  /* margin-top: 400px; */
+  /* margin: auto auto; */
+}
+.grid-container{
+  margin-top: 30px;
+  background-color: rgb(167, 167, 128);
+  display: grid;
+ grid-template-columns: repeat(3,1fr) ;
+ /* grid-template-columns: 200px 1fr 1fr; */
+ grid-template-rows: 200px 200px 200px;
+ gap: 10px;
+ padding: 200px 30px;
+ /* row-gap: 10px; */
+  
+}
+.grid-item{
+  /* width: 200px; */
+  height: 200px;
+  border: 1px solid red;
+  /* grid-column: 1/3; */
+
+}
+/* #grid-item-1{
+  grid-column-start:1 ;
+  grid-column-end: 3;
+} */
+ #grid-item-1{
+  background-color: beige;
+ }
+
+ #grid-item-2{
+  background-color: blue;
+ }
+ #grid-item-3{
+  background-color: chartreuse;
+ }
+ #grid-item-4{
+  background-color: burlywood;
+ }
+
+ #grid-item-5{
+  background-color: cornflowerblue;
+ }
+   #grid-item-6{
+  background-color: rgb(255, 0, 247);
+ }
+  #grid-item-7{
+  background-color: rgb(47, 0, 255);
+ }
+  #grid-item-8{
+  background-color: rgb(0, 255, 72);
+ }
+  #grid-item-9{
+  background-color: rgb(255, 149, 0);
+ }
+  #grid-item-10{
+  background-color: rgb(25, 26, 27);
+ }

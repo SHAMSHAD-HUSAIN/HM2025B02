@@ -1,0 +1,128 @@
+.heading1{
+    background-color: blue;
+}
+.heading2{
+    background-color: rgb(31, 151, 211);
+}
+.heading3{
+    background-color: rgba(35,255,178,0.4);
+}
+.heading4{
+    background-color: #f34;
+}
+.heading5{
+    background-color: #9c8987;
+}
+.heading6{
+    background-color: #2345;
+}
+#para1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYFpq-oj6wSRO4XZXhHxKOJb_qVdaAzJhUYQ&s");
+/* background-repeat: no-repeat; */
+/* object-fit: fill; */
+background-position: right;
+background-size: 100%;
+
+}
+.div-one{
+    height: 300px;
+    width: 300px;
+    background-color: #f34;
+    border: 5px solid rgb(49, 17, 167);
+    padding: 50px 20px 40px 40px;
+
+}
+.div-two{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(51, 255, 160);
+    border: 5px solid rgb(49, 17, 167);
+    padding: 50px;
+    margin-top: -30px;
+    margin-left: 200px;
+    /* margin-bottom: 40px; */
+
+}
+.head-div{
+    background-color: rgb(18, 26, 23);
+    color: aliceblue;
+    border: 5px solid #87879c;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+.border{
+    height: 200px;
+    width: 200px;
+   /* border: 3px solid red; */
+   /* border: 3px dotted red;
+    */
+   /* border: 3px dashed red; */
+   border-top: 1px solid RED;
+   border-left: 2px dashed blue;
+   border-right: 5px solid black;
+   border-bottom: 2px dotted rgb(15, 197, 130);
+
+
+}
+.border-radius{
+    width: 400px;
+    height: 400px;
+    background-color: #f34;
+    border: 8px double green;
+}
+.border-img{
+    height: 400px;
+    width: 400px;
+    /* border-radius: 20px 30px 40px 50px; */
+    /* border-radius: 40% 30% 70px 50%; */
+    /* border-radius: 50% 50% 50% 50%; */
+    border-radius: 50%;
+    border-top: 5px solid black;
+    /* border-image: url("./image/clay-banks-fZHP8uq6WhQ-unsplash.jpg"); */
+}
+.text{
+    /* text-align: center; */
+    text-align: center;
+    /* text-transform: uppercase; */
+    text-transform: lowercase;
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    /* text-decoration: overline; */
+    /* text-decoration: wavy; */
+    text-shadow: 10px 7px 2px crimson;
+}
+.text-div{
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+padding: 20px;
+}
+.text-2{
+    color: blue;
+    text-align: justify;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    
+}
+
+.card {
+  width: 300px;
+  background-color: white;
+  border: 2px solid #0d6efd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 50px 50px;
+  text-align: center;
+}
+
+.card h2 {
+  color: #0d6efd;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: #555;
+  line-height: 22px;
+}

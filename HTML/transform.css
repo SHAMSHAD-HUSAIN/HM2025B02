@@ -1,0 +1,55 @@
+.transform{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotatey(45deg); */
+    /* transform: scale(0.5); */
+    /* transform: scaleX(2); */
+    /* transform: scaley(0.5); */
+    /* transform: scalez(3); */
+    /* transform: scale(2,3); */
+    /* transform: translate(2px); */
+    /* transform: translate(-30px,-40%); */
+    /* transform: translate(30px,40%); */
+    /* transform: translate(50%,50%);
+     */
+     /* transform: translateX(50px); */
+     /* transform: translateY(40%); */
+     /* transform: skew(30deg); */
+     /* transform: skewX(30deg); */
+     transform: skewx(30deg);
+
+}
+.transformY{
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 255, 153);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotatey(45deg); */
+    /* transform: scale(0.5); */
+    /* transform: scaleX(2); */
+    /* transform: scaley(0.5); */
+    /* transform: scalez(3); */
+    /* transform: scale(2,3); */
+    /* transform: translate(2px); */
+    /* transform: translate(-30px,-40%); */
+    /* transform: translate(30px,40%); */
+    /* transform: translate(50%,50%);
+     */
+     /* transform: translateX(50px); */
+     /* transform: translateY(40%); */
+     /* transform: skew(30deg); */
+     /* transform: skewX(30deg); */
+     transform: skewy(30deg);
+
+}

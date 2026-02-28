@@ -1,0 +1,68 @@
+.tramform-parent{
+    background-color: rgb(255, 0, 247);
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+}
+.tranform-div1{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tranform-div2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(0, 255, 47);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* transform:rotate(90deg) ; */
+    /* transform: rotatex(60deg); */
+    /* transform: rotatey(60deg); */
+
+/* scale property */
+
+/* transform: scale(2); */
+/* transform: scale(0.5); */
+/* transform: scaleX(2); */
+/* transform: scaleY(2); */
+
+/* translate  */
+/* transform: translate(-40px,-90px); */
+/* transform: translate(-40%,-50%); */
+/* transform: translatey(-50%); */
+/* transform: translatex(-40px); */
+
+/* skew poperty  */
+transform: skewY(30deg);
+
+
+
+
+
+
+
+
+}
+.tranform-div3{
+        height: 200px;
+    width: 200px;
+    background-color: rgb(208, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: rotateX(20deg); */
+    /* transform: rotateY(40deg);
+    transform: rotateZ(40deg); */
+      transform: skewX(30deg);
+    /* transform: skewZ(40deg);s */
+transform: skewY(30deg);
+
+
+}

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Transform, Transition & Animation Projects</title>
+
+<style>
+
+/* =====================================
+   GLOBAL STYLES
+===================================== */
+body{
+  font-family: Arial, sans-serif;
+  background:#f4f4f4;
+  padding:20px;
+}
+.project-section{
+  background:#fff;
+  padding:20px;
+  margin-bottom:30px;
+  border-radius:8px;
+}
+h2{color:#333;}
+
+/* =====================================
+   PROJECT 1 – Hover Card
+===================================== */
+.card-hover{
+  width:250px;
+  padding:20px;
+  box-shadow:0 4px 10px rgba(0,0,0,.2);
+  transition:transform .3s ease;
+}
+.card-hover:hover{
+  transform:translateY(-10px) scale(1.05);
+}
+
+/* =====================================
+   PROJECT 2 – Button Transition
+===================================== */
+.btn-transition{
+  padding:15px 30px;
+  background:#007bff;
+  color:#fff;
+  border:none;
+  transition:.3s;
+}
+.btn-transition:hover{
+  background:#0056b3;
+  transform:scale(1.1);
+}
+
+/* =====================================
+   PROJECT 3 – Image Zoom
+===================================== */
+.image-zoom{
+  width:300px;
+  overflow:hidden;
+}
+.image-zoom img{
+  width:100%;
+  transition:.5s;
+}
+.image-zoom:hover img{
+  transform:scale(1.2);
+}
+
+/* =====================================
+   PROJECT 4 – Loader
+===================================== */
+.loader-spin{
+  width:60px;
+  height:60px;
+  border:6px solid #ddd;
+  border-top:6px solid #007bff;
+  border-radius:50%;
+  animation:spin .5s linear infinite;
+}
+@keyframes spin{
+  to{transform:rotate(360deg);}
+}
+
+/* =====================================
+   PROJECT 5 – Text Fade & Slide (FIXED)
+===================================== */
+.text-fade-slide{
+  font-size:24px;
+  animation:fadeSlide 1.5s ease infinite alternate;
+}
+@keyframes fadeSlide{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+/* =====================================
+   PROJECT 6 – Flip Card
+===================================== */
+.flip-wrapper{
+  perspective:1000px;
+  width:250px;
+  height:150px;
+}
+.flip-box{
+  width:100%;
+  height:100%;
+  transition:.6s;
+  transform-style:preserve-3d;
+}
+.flip-wrapper:hover .flip-box{
+  transform:rotateY(180deg);
+}
+.flip-front,.flip-back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  backface-visibility:hidden;
+}
+.flip-front{background:#4caf50;color:#fff;}
+.flip-back{
+  background:#ff5722;
+  color:#fff;
+  transform:rotateY(180deg);
+}
+
+/* =====================================
+   PROJECT 7 – Dropdown
+===================================== */
+.dropdown-box{
+  width:200px;
+}
+.dropdown-menu{
+  max-height:0;
+  overflow:hidden;
+  background:#eee;
+  transition:.4s;
+}
+.dropdown-box:hover .dropdown-menu{
+  max-height:150px;
+}
+
+/* =====================================
+   PROJECT 8 – Progress Bar (FIXED)
+===================================== */
+.progress-container{
+  width:300px;
+  background:#ddd;
+  border-radius:20px;
+  overflow:hidden;
+}
+.progress-bar{
+  width:0;
+  height:20px;
+  background:#2196f3;
+  transition:width 2s ease;
+}
+.progress-container:hover .progress-bar{
+  width:80%;
+}
+
+/* =====================================
+   PROJECT 9 – Shake Icon
+===================================== */
+.icon-shake{
+  font-size:40px;
+  animation:shake 1.5s infinite;
+}
+@keyframes shake{
+  0%{transform:rotate(0);}
+  25%{transform:rotate(10deg);}
+  50%{transform:rotate(-10deg);}
+  75%{transform:rotate(10deg);}
+  100%{transform:rotate(0);}
+}
+
+/* =====================================
+   PROJECT 10 – Modal Popup (FIXED)
+===================================== */
+.modal-demo{
+  width:300px;
+  padding:20px;
+  border:2px solid #333;
+  transform:scale(0);
+  opacity:0;
+  transition:.5s;
+}
+.project-section:hover .modal-demo{
+  transform:scale(1);
+  opacity:1;
+}
+
+/* =====================================
+   PROJECT 11 – Navbar Underline
+===================================== */
+.nav-underline{
+  display:flex;
+  gap:30px;
+}
+.nav-underline a{
+  position:relative;
+  text-decoration:none;
+  color:#333;
+}
+.nav-underline a::after{
+  content:'';
+  position:absolute;
+  bottom:-5px;
+  left:0;
+  height:3px;
+  width:100%;
+  background:#007bff;
+  transform:scaleX(0);
+  transition:.3s;
+}
+.nav-underline a:hover::after{
+  transform:scaleX(1);
+}
+
+/* =====================================
+   PROJECT 12 – Image Slider
+===================================== */
+.slider-box{
+  width:300px;
+  overflow:hidden;
+}
+.slider-track{
+  display:flex;
+  animation:slide 6s infinite;
+}
+.slider-track img{width:300px;}
+@keyframes slide{
+  0%,20%{transform:translateX(0);}
+  40%,60%{transform:translateX(-300px);}
+  80%,100%{transform:translateX(-600px);}
+}
+
+/* =====================================
+   PROJECT 13 – Toast
+===================================== */
+.toast-msg{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#333;
+  color:#fff;
+  padding:15px;
+  animation:toast 4s infinite;
+}
+@keyframes toast{
+  0%{transform:translateX(100%);opacity:0;}
+  20%,80%{transform:translateX(0);opacity:1;}
+  100%{transform:translateX(100%);opacity:0;}
+}
+
+/* =====================================
+   PROJECT 14 – Floating Label
+===================================== */
+.input-group{
+  position:relative;
+  width:250px;
+}
+.input-group input{
+  width:100%;
+  padding:10px;
+}
+.input-group label{
+  position:absolute;
+  top:50%;
+  left:10px;
+  transform:translateY(-50%);
+  transition:.3s;
+}
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label{
+  top:-8px;
+  font-size:12px;
+  color:#007bff;
+}
+
+/* =====================================
+   PROJECT 15 – Hero Text Reveal (FIXED)
+===================================== */
+.hero-reveal{
+  font-size:40px;
+  font-weight:bold;
+  display:inline-block;
+  overflow:hidden;
+  animation:reveal 2s ease forwards;
+}
+@keyframes reveal{
+  from{clip-path:inset(0 100% 0 0);}
+  to{clip-path:inset(0 0 0 0);}
+}
+/* =====================================
+   HEART BEAT ANIMATION
+   Concepts: transform, animation
+===================================== */
+.heart-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:150px;
+}
+
+.heart{
+  width:60px;
+  height:60px;
+  background:red;
+  position:relative;
+  transform:rotate(-45deg);
+  animation:heartbeat 5s infinite;
+}
+
+/* Create heart shape using before & after */
+.heart::before,
+.heart::after{
+  content:"";
+  width:60px;
+  height:60px;
+  background:red;
+  border-radius:50%;
+  position:absolute;
+}
+
+.heart::before{
+  top:-30px;
+  left:0px;
+}
+
+.heart::after{
+  left:30px;
+  top:0;
+}
+
+.heart h3{
+    z-index: 1;
+
+}
+/* Heart beat animation */
+@keyframes heartbeat{
+  0%{
+    transform:rotate(60deg)  scale(.5);
+  }
+  25%{
+    transform:rotate(45deg) scale(2);
+  }
+  50%{
+    transform:rotate(-45deg) scale(1) translate(200px);
+  }
+  75%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform:rotate(-45deg) scale(1);
+  }
+}
+
+.psudo-element::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    /* top: 0px; */
+    /* bottom: 5px; */
+}
+.psudo-element::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    /* left: 10px; */
+    /* top: 0px; */
+    /* bottom: 5px; */
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="project-section"><h2>1. Hover Card</h2><div class="card-hover">Hover Me</div></section>
+<section class="project-section"><h2>2. Button Transition</h2><button class="btn-transition">Hover</button></section>
+<section class="project-section"><h2>3. Image Zoom</h2><div class="image-zoom"><img src="../../image/clay-banks-fZHP8uq6WhQ-unsplash.jpg"></div></section>
+<section class="project-section"><h2>4. Loader</h2><div class="loader-spin"></div></section>
+<section class="project-section"><h2>5. Fade Slide</h2><div class="text-fade-slide">Animated Text</div></section>
+<section class="project-section"><h2>6. Flip Card</h2><div class="flip-wrapper"><div class="flip-box"><div class="flip-front">FRONT</div><div class="flip-back">BACK</div></div></div></section>
+<section class="project-section"><h2>7. Dropdown</h2><div class="dropdown-box"><button>Menu</button><div class="dropdown-menu"><p>Home</p><p>About</p></div></div></section>
+<section class="project-section"><h2>8. Progress</h2><div class="progress-container"><div class="progress-bar"></div></div></section>
+<section class="project-section"><h2>9. Shake</h2><div class="icon-shake">🔔</div></section>
+<section class="project-section"><h2>10. Modal</h2><div class="modal-demo">Modal Content</div></section>
+<section class="project-section"><h2>11. Navbar</h2><nav class="nav-underline"><a>Home</a><a>About</a></nav></section>
+<section class="project-section"><h2>12. Slider</h2><div class="slider-box"><div class="slider-track"><img src="https://via.placeholder.com/300/ff0000"><img src="https://via.placeholder.com/300/00ff00"><img src="https://via.placeholder.com/300/0000ff"></div></div></section>
+<section class="project-section"><h2>13. Toast</h2><div class="toast-msg">Saved!</div></section>
+<section class="project-section"><h2>14. Floating Label</h2><div class="input-group"><input placeholder=" "><label>Name</label></div></section>
+<section class="project-section"><h2>15. Hero Reveal</h2><div class="hero-reveal">HiTech Mentor</div></section>
+<section class="project-section">
+  <h2>❤️ Heart Beat Animation</h2>
+
+  <div class="heart-container">
+    <div class="heart"></div>
+   
+  </div>
+</section>
+<section>
+    <div class="psudo-div">
+        <p class="psudo-element">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, qui?</p>
+    </div>
+</section>
+
+</body>
+</html>
